@@ -1,0 +1,34 @@
+@media only screen {
+
+}
+
+
+@media only screen and (max-width: 992px) {
+    .title_main {
+        font-size: 400%;
+  
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .title_main {
+        font-size: 300%;
+  
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .title_main {
+        font-size: 200%;
+  
+    }
+}
+
+
+@media only screen and (max-width:380px) {
+
+}
+

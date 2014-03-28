@@ -1,0 +1,52 @@
+extends layout
+
+block content_body
+
+    div.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+        div.containerB
+            div.navbar-header
+                button.navbar-toggle(type='button', data-toggle='collapse', data-target='.bs-navbar-collapse')
+                    span.sr-only Toggle navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a.navbar-brand(href='#') Welcome
+            nav.collapse.navbar-collapse.bs-navbar-collapse(role='navigation')
+                ul.nav.navbar-nav
+                    li
+                        a(href='/') Home
+                    li
+                        a(href='./about') About
+                    li
+                        a(href='./experience') Experience
+                    li
+                        a(href='./profile') Profile
+                    li
+                        a(href='./login') Login
+                    li.active
+                        a(href='./signup') Sign Up
+
+    .container_login
+        .col-sm-6.col-sm-offset-3
+            h1
+                span.fa.fa-sign-in
+                | Sign Up
+
+            if (message.length > 0)
+                div.alert.alert-danger #{message}
+            // LOGIN FORM
+            form(action='/signup', method='post')
+                .form-group
+                    label Email
+                    input.form-control(type='text', name='username')
+                .form-group
+                    label Password
+                    input.form-control(type='password', name='password')
+                button.btn.btn-warning.btn-lg(type='submit') Sign Up
+            hr
+            p
+                | Already have an account? &nbsp;
+                a(href='/login') Login
+            p
+                | Or go &nbsp;
+                a(href='/') Home

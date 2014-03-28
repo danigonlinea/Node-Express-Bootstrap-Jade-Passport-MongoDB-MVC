@@ -1,0 +1,28 @@
+// the skeleton of HTML pages that is used on all pages
+// Si no añado bien la ruta donde se encuentra el .js no me va a funcionar, ojo con eso.
+// Jade te obliga a que tu documento esté indexado correctamente
+// 3) WebMatrix no me actualiza ni el css, ni el javascript cuando ejecuto la página web !!! shit!!!
+doctype html
+html
+  head
+    title= title
+    meta(name='keywords', content='example nodejs')
+    meta(name='viewport',   content="width=device-width initial-scale=1.0")
+    meta(name="author", content="Daniel González")
+    link(rel='stylesheet', href='stylesheets/style.css')
+    link(rel='stylesheet', href='stylesheets/login_view.css')
+    link(rel='stylesheet', href='stylesheets/media-queries.css')
+    link(rel='stylesheet', href='bootstrap/css/bootstrap.min.css')
+    
+  body
+
+    block content_body
+
+
+  footer
+    script(type="text/javascript" , src='lib_js/jquery-2.1.0.min.js')
+    //script(src='http://code.jquery.com/jquery-1.9.0.js')
+    script(type="text/javascript" , src='lib_js/underscore.js')
+    script(type="text/javascript" , src='lib_js/backbone.js')
+    script(type="text/javascript" , src='javascripts/Script.js')
+    script(type="text/javascript" , src='bootstrap/js/bootstrap.min.js')

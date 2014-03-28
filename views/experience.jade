@@ -1,0 +1,38 @@
+extends layout
+
+block content_body
+
+    div.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+          div.containerB
+           div.navbar-header
+             button.navbar-toggle(type='button', data-toggle='collapse', data-target='.bs-navbar-collapse')
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+             a.navbar-brand(href='#') Welcome
+           nav.collapse.navbar-collapse.bs-navbar-collapse(role='navigation')
+              ul.nav.navbar-nav
+                li
+                  a(href='/') Home
+                li
+                  a(href='./about') About
+                li.active
+                  a(href='./experience') Experience
+                li
+                  a(href='./profile') Profile
+                li
+                  a(href='./login') Login
+                li
+                  a(href='./signup') Sign Up
+
+    div.container-video
+        video#video_lines(autoplay='autoplay', loop='loop', muted='muted', width='640', height='634')
+            source(src='http://bootstraptor.com/wp-content/uploads/2014/01/drawing.mp4', type='video/mp4')
+
+
+    if (title.length > 0)
+        p.btn-warning #{title}
+
+
+

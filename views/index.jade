@@ -1,0 +1,62 @@
+// index page
+// # es el ID , . es CLASS
+extends layout
+
+block content_body
+    // MENU TOP
+    div.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+      div.containerB
+        div.navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.bs-navbar-collapse')
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+          a.navbar-brand(href='#') Welcome
+        nav.collapse.navbar-collapse.bs-navbar-collapse(role='navigation')
+          ul.nav.navbar-nav
+            li.active
+              a(href='/') Home
+            li
+              a(href='./about') About
+            li
+              a(href='./experience') Experience
+            li
+              a(href='./profile') Profile
+            li
+              a(href='./login') Login
+            li
+              a(href='./signup') Sign Up
+      
+    // Pequeño titulo con mi nombre
+    div.container_main
+        div(class='row')
+            div(class='row_nombre')
+                label Daniel González
+            div(class='row_descripcion')
+                label Esto es una descripción breve de lo que soy, lo que estoy haciendo y en fin hablar un poco de mi y bla de las camaras de contoiras de blas decisiones endiabladas.
+            div(class='row_iconos')
+                a(href='https://github.com/danigonlinea')
+                    img(src='./images/icons/github.png' , width='7%', heigth='7%')
+                a(href='https://danigonlinea.blogspot.com/')
+                    img(src='./images/icons/BloggerIcon.png' , width='6%', heigth='6%')
+    div.container
+      .row
+        .col-md-4
+          h2 Heading 1
+          p
+            | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+          p
+            a.btn.btn-default(href='#', role='button') View details »
+        .col-md-4
+          h2 Heading 2
+          p
+            | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+          p
+            a.btn.btn-default(href='#', role='button') View details »
+        .col-md-4
+          h2 Heading 3
+          p
+            | Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+          p
+            a.btn.btn-default(href='#', role='button') View details »
